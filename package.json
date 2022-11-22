@@ -1,0 +1,28 @@
+{
+  "name": "noellemittel-nortfolio-site",
+  "version": "0.0.1",
+  "description": "Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "start-dev": "npm run build-watch & npm run start-server",
+    "start-server": "nodemon main.js -e html,js,css --ignore public",
+    "start": "echo 'Running server for production - developers, use npm run start-dev for development' && node main",
+    "seed": "node seed.js"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "skeleton"
+  ],
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.0",
+    "axios": "^1.2.0",
+    "express": "^4.18.2",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.4.3",
+    "redux": "^4.2.0"
+  },
+  "devDependencies": {
+    "@redux-devtools/core": "^3.13.1"
+  }
+}
